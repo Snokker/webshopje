@@ -4,6 +4,7 @@
 //https://expressjs.com/en/starter/generator.html
 //https://getbootstrap.com/docs/4.1/getting-started/download/
 //https://code.jquery.com/
+//https://fontawesome.com/
 
 // opzet: zet snel een node/express app op.
 // npm install express-generator -g (global)
