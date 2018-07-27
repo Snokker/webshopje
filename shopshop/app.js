@@ -20,10 +20,15 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 //onthoud dat in het begin iets anders is gegaan, de jason-lock
 var expressHbs = require('express-handlebars');
+// mongodb en mongoose geinstalleerd (mongoose via terminal want nodejs)
+var mongoose = require('mongoose');
 
 var indexRouter = require('./routes/index');
 
 var app = express();
+
+//app connecten aan mongodb server
+mongoose.connect('localhost:27017/shopping');
 
 // view engine setup
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}))
