@@ -27,8 +27,8 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 
-//app connecten aan mongodb server
-mongoose.connect('localhost:27017/shopping');
+//app connecten aan mongodb server, shopping word aangemaakt volgens mij
+mongoose.connect('mongodb://localhost:27017/shopping', { useNewUrlParser: true });
 
 // view engine setup
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}))
